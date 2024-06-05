@@ -1,4 +1,4 @@
-### Data Explaination (the data is only for recommendation task)
+### Data Explaination
 #### train folder: 
 - train_infor_his
   - JSON file for user clicked history
