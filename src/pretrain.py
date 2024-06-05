@@ -73,7 +73,7 @@ class Trainer(TrainerBase):
         config = self.create_config()
         self.tokenizer = self.create_tokenizer()
         self.model = self.create_model(model_class, config, **model_kwargs)
-
+        self.model.resize_token_embeddings(self.tokenizer.vocab_size)
         self.model.tokenizer = self.tokenizer
 
         # Load Checkpoint
