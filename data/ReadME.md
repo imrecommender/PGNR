@@ -42,3 +42,6 @@
 - example: {'N55528': 'lifestyleroyals The Brands Queen Elizabeth, Prince Charles, and Prince Philip Swear By',
  'N19639': 'weightloss 50 Worst Habits For Belly Fat'}
 - USAGE: line 34 & 298 in pretrain_data.py
+
+## Note: 
+The original MIND news dataset can be downloaded from https://msnews.github.io
