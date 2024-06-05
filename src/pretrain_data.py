@@ -291,16 +291,15 @@ class val_Dataset(Dataset):
         self.sample_type = sample_type
         self.mode = mode
 
-        if self.mode == 'val':
+        if self.mode == 'val': # also for test
             self.his = pickle.load(
-                open(os.path.join('data/val/history'), "rb"))
+                open(os.path.join('./data/val/val_id_history'), "rb"))
   
             self.interaction = pickle.load(
-                open(os.path.join('data/val/interaction'), "rb"))
+                open(os.path.join('./data/val/val_interaction'), "rb"))[:100]
              
             self.infor = pickle.load(
-                open(os.path.join('data/val/news_infor'), "rb"))
-             
+                open(os.path.join('./data/news_infor'), "rb"))
         
         else:
             raise NotImplementedError
