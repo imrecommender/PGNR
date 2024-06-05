@@ -83,8 +83,8 @@ def evaluate(test_loader):
     model_class = P5Pretraining
     model = create_model(model_class, config)
 
-    #if 'p5' in args.tokenizer:
-       # model.resize_token_embeddings(tokenizer.vocab_size)
+   
+    model.resize_token_embeddings(tokenizer.vocab_size)
 
     model.tokenizer = tokenizer
 
