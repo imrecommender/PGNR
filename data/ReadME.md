@@ -44,4 +44,5 @@
 - USAGE: line 34 & 298 in pretrain_data.py
 
 ## Note: 
-The original MIND news dataset can be downloaded from https://msnews.github.io
+The original MIND news dataset can be downloaded from https://msnews.github.io and can be processed to the expected format
+
