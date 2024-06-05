@@ -35,6 +35,7 @@
   - same format as val_interaction
 - test_infor_his
   - same format as train_infor_his
+- USAGE: line 292 & 295 in pretrain_data.py
     
 #### news_infor: 
 - format: JSON file for news id and textual content matching
