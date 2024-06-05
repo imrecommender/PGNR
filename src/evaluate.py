@@ -48,14 +48,10 @@ def create_config(args):
 
 def create_tokenizer(args):
     from transformers import T5Tokenizer, T5TokenizerFast
-    from tokenization import P5Tokenizer, P5TokenizerFast
-
-    if 'p5' in args.tokenizer:
-        tokenizer_class = P5Tokenizer
 
     tokenizer_name = args.backbone
 
-    tokenizer = tokenizer_class.from_pretrained(
+    tokenizer = T5Tokenizer.from_pretrained(
         tokenizer_name,
         max_length=args.max_text_length,
         do_lower_case=args.do_lower_case,
